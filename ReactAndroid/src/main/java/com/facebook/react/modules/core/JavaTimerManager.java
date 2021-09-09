@@ -7,6 +7,7 @@
 
 package com.facebook.react.modules.core;
 
+import android.util.Log;
 import android.util.SparseArray;
 import androidx.annotation.Nullable;
 import com.facebook.proguard.annotations.DoNotStrip;
@@ -177,6 +178,7 @@ public class JavaTimerManager {
     mReactChoreographer = reactChoreographer;
     mDevSupportManager = devSupportManager;
 
+    Log.d("========", "=====> JavaTimerManager (react-native-1)")
     // We store timers sorted by finish time.
     mTimers =
         new PriorityQueue<Timer>(
